@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: rgba(79, 100, 70, 1);
+}
+
+body {
+  background: rgba(241, 231, 103, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 59%,
+    rgba(79, 100, 70, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(241, 231, 103, 1)),
+    color-stop(59%, rgba(254, 182, 69, 1)),
+    color-stop(100%, rgba(79, 100, 70, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 59%,
+    rgba(79, 100, 70, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 59%,
+    rgba(79, 100, 70, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 59%,
+    rgba(79, 100, 70, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 59%,
+    rgba(79, 100, 70, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#4f6446', GradientType=1 );
+}
+
+.window-app {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10% auto;
+  padding: 10px;
+  box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.8);
+  max-width: 900px;
+  height: fit-content;
+
+  &__header {
+    height: fit-content;
+    padding-bottom: 5px;
+  }
+
+  &__loader {
+    text-align: center;
+    height: 30px;
+    // padding-bottom: 5px;
+  }
+
+  &__content {
+    padding: 5px;
+  }
+
+  &__footer {
+    height: 20px;
+  }
+}
+
+.btn {
+  background-color: transparent;
+  border-color: aliceblue;
+  border: 1px solid;
+  border-radius: 4px;
+  color: aliceblue;
+  cursor: pointer;
+  height: 40px;
+  font-weight: bolder;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  &__input {
+    background: transparent;
+    height: 45px;
+    border: none;
+    padding: 5px;
+    border-color: rgb(249, 255, 255);
+    &:focus {
+      color: rgb(32, 48, 25);
+    }
+  }
+}
+
+.list-todo {
+  display: flex;
+  gap: 10px;
+  flex-direction: column-reverse;
+  .list-todo__element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px rgba(#0000, 0.4);
+    min-height: 50px;
+    height: fit-content;
+    padding: 5px;
+    gap: 10px;
+    border-radius: 5px;
+
+    .list-todo__title {
+      display: flex;
+      gap: 10px;
+      .tittle-name {
+        font-weight: bolder;
+      }
+    }
+
+    &-active {
+      background: rgba(79, 100, 70, 0.2);
+    }
+
+    &-close {
+      border: none;
+      padding: 10px;
+      display: flex;
+      align-items: end;
+      height: fit-content;
+    }
+
+    &:hover {
+      background-color: rgb(azure, 0.1);
+    }
+  }
+}

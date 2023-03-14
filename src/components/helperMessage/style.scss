@@ -1,0 +1,26 @@
+.helper-container {
+  border: none;
+
+  // color: aliceblue;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: fit-content;
+  height: fit-content;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(#0000, 0.4);
+  span {
+    color: aliceblue;
+  }
+  &.info {
+    background-color: rgb(#02760800, 1);
+  }
+  &.error {
+    background-color: rgb(#fe3a3a00, 1);
+  }
+  &.success {
+    background-color: rgb(#5772fb00, 0.9);
+  }
+}

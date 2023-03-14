@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": "c90b730b-585a-4c40-bab6-56934ae1ff55",
+      "name": "hola",
+      "description": "Soy un desarrollador frontend",
+      "completed": false
+    },
+    {
+      "id": "4d33d160-d067-46d1-9cbf-0f04688398cf",
+      "name": "Ing Ciencias",
+      "description": "Ingeniero en Ciencias Informaticas",
+      "completed": false
+    },
+    {
+      "id": "8a27d212-b208-4502-8e95-9c59c244a55a",
+      "name": "Aspiracion",
+      "description": "Scrum Master y tech Leader",
+      "completed": false
+    }
+  ]
+}
